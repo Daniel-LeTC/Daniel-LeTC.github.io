@@ -1,5 +1,5 @@
 # Thanh Ngo-Tri (Daniel)
-**Senior AI Solutions Architect | Master of Data Science (GPA 4.0)**
+**Senior AI Solutions Architect**
 
 This repository hosts my professional portfolio and CV, built with a focus on information density and engineering excellence.
 
