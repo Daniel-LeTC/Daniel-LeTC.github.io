@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Ngo-Tri - Engineering Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Open+Sans:wght@400;600;700&display=swap');
+
+        :root {
+            --text-color: #000000;
+            --link-color: #000000;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background: #ffffff;
+            font-family: 'Merriweather', serif; /* Classic Harvard Style */
+            color: var(--text-color);
+            line-height: 1.4;
+            font-size: 11pt; /* Standard Resume Size */
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 40px 50px; /* Standard Margins */
+            background: #fff;
+        }
+
+        /* --- HEADER --- */
+        header { text-align: center; margin-bottom: 20px; border-bottom: 1px solid #000; padding-bottom: 15px; }
+        h1 { font-size: 24pt; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-family: 'Open Sans', sans-serif; }
+        .contact-info { font-size: 10pt; font-family: 'Open Sans', sans-serif; }
+        .contact-info a { text-decoration: none; color: var(--link-color); margin: 0 5px; }
+        .contact-info span { margin: 0 5px; }
+
+        /* --- SECTIONS --- */
+        section { margin-bottom: 18px; }
+        h2 {
+            font-size: 12pt; font-family: 'Open Sans', sans-serif; text-transform: uppercase; border-bottom: 1px solid #000;
+            margin-bottom: 10px; padding-bottom: 2px;
+        }
+
+        /* --- ENTRIES --- */
+        .entry { margin-bottom: 10px; }
+        .entry-header { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Open Sans', sans-serif; }
+        .entry-title { font-weight: 700; font-size: 11pt; }
+        .entry-date { font-style: italic; font-size: 10pt; }
+        .entry-subtitle { font-style: italic; font-size: 11pt; margin-bottom: 4px; }
+        
+        .tech-stack { font-size: 9pt; font-family: 'Open Sans', sans-serif; margin-bottom: 4px; color: #444; }
+        
+        ul { list-style-type: disc; margin-left: 18px; }
+        li { margin-bottom: 3px; font-size: 10.5pt; text-align: justify; }
+
+        /* --- SKILLS GRID --- */
+        .skills-table { width: 100%; font-size: 10.5pt; margin-bottom: 10px; }
+        .skills-table td { vertical-align: top; padding-bottom: 4px; }
+        .skill-category { font-weight: 700; width: 160px; font-family: 'Open Sans', sans-serif; }
+
+        @media print {
+            body { margin: 0; }
+            .page { width: 100%; margin: 0; padding: 30px 40px; }
+            a { text-decoration: none; color: #000; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <h1>Thanh Ngo-Tri (Daniel)</h1>
+        <div class="contact-info">
+            <a href="mailto:ntthanh1510@gmail.com">ntthanh1510@gmail.com</a> <span>|</span>
+            +84 334 004 946 <span>|</span>
+            Ho Chi Minh City, VN
+            <br>
+            <a href="https://github.com/Daniel-LeTC">github.com/Daniel-LeTC</a> <span>|</span>
+            <a href="https://linkedin.com/in/thanh-ngo-tri-5ba2b5117">linkedin.com/in/thanh-ngo-tri</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Illinois Institute of Technology</span>
+                <span class="entry-date">Chicago, USA (Remote)</span>
+            </div>
+            <div class="entry-header">
+                <span class="entry-subtitle">Master of Data Science</span>
+                <span class="entry-date">Expected Oct 2026</span>
+            </div>
+            <ul>
+                <li><strong>GPA: 4.0/4.0</strong>. Focus: Deep Learning, Advanced Statistics, Database Systems.</li>
+            </ul>
+        </div>
+        <div class="entry" style="margin-bottom: 0;">
+            <div class="entry-header">
+                <span class="entry-title">Université Paris-Est Créteil (UPEC)</span>
+                <span class="entry-date">France</span>
+            </div>
+            <div class="entry-header">
+                <span class="entry-subtitle">Bachelor of Arts in International Commerce</span>
+                <span class="entry-date">2017</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <td class="skill-category">AI & LLM:</td>
+                <td>RAG Systems, Agentic Workflows, Prompt Engineering, LangChain, Google Gemini API.</td>
+            </tr>
+            <tr>
+                <td class="skill-category">Data Engineering:</td>
+                <td>DuckDB, Polars, SQL (Advanced), ETL/ELT Pipelines, Data Lakehouse Architecture.</td>
+            </tr>
+            <tr>
+                <td class="skill-category">Computer Vision:</td>
+                <td>YOLOv8/v11, Object Detection/Tracking, ONNX Optimization, Edge Deployment.</td>
+            </tr>
+            <tr>
+                <td class="skill-category">Backend & Ops:</td>
+                <td>Python, FastAPI, Docker, Streamlit, n8n Automation, Linux/Bash.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Selected Engineering Projects (Portfolio)</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Performance Analysis Assistant (Headless BI)</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <div class="tech-stack"><strong>Stack:</strong> Polars, DuckDB, FastAPI, Google Gemini 2.5, SQLGlot</div>
+            <ul>
+                <li>Architected a secure, headless BI core capable of handling <strong>1M+ rows with &lt;0.5s latency</strong> using DuckDB and Polars zero-copy integration.</li>
+                <li>Designed a "Shadow View" Row-Level Security mechanism and implemented SQL injection guardrails via AST parsing.</li>
+                <li>Enabled natural language querying through an LLM Agent with self-correction capabilities.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Bright Scraper Platform (Market Intelligence)</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <div class="tech-stack"><strong>Stack:</strong> Python, Streamlit, DuckDB, Multi-threading</div>
+            <ul>
+                <li>Engineered a scalable scraping system analyzing <strong>10,000+ products daily</strong> across Amazon and TikTok Shop.</li>
+                <li>Implemented a <strong>Blue-Green Database Deployment</strong> strategy to ensure zero-downtime updates for critical data pipelines.</li>
+                <li>Built an automated "Detective Agent" using LLMs to extract competitor insights and identify product anomalies.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Polymath Second Brain (RAG System)</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <div class="tech-stack"><strong>Stack:</strong> Python, ChromaDB, Ollama (Local LLM), Neovim Plugin</div>
+            <ul>
+                <li>Developed a hybrid RAG system with automatic fallback from Cloud AI (Gemini) to Local LLM (Qwen 2.5) for resilience.</li>
+                <li>Implemented "Systematic Chaos" logic with intelligent chunking and metadata enrichment for unstructured knowledge retrieval.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Pizza Sales Vision (Edge AI)</span>
+                <span class="entry-date">2025</span>
+            </div>
+            <div class="tech-stack"><strong>Stack:</strong> YOLOv8, OpenCV, Docker, Streamlit</div>
+            <ul>
+                <li>Built a real-time computer vision system for inventory tracking using zone-based logic.</li>
+                <li>Solved "ghost detection" issues by implementing a temporal probation algorithm, increasing count accuracy to <strong>98%</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">PPC Data Lakehouse (ETL Tool)</span>
+                <span class="entry-date">2025</span>
+            </div>
+            <div class="tech-stack"><strong>Stack:</strong> Python, Parquet, n8n, DuckDB</div>
+            <ul>
+                <li>Designed a "No-Merge" ETL pipeline ingesting high-frequency PPC data into a partitioned Silver Layer.</li>
+                <li>Optimized read performance using DuckDB `arg_max` for on-the-fly deduplication.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">AI Engineer / Data Scientist (Contract)</span>
+                <span class="entry-date">Jul 2024 – Present</span>
+            </div>
+            <div class="entry-subtitle">EatLab (Thailand) & Sustainable Textile Solutions</div>
+            <ul>
+                <li>Developed Sales Forecasting models using <strong>LightGBM</strong>, achieving 81% accuracy and replacing legacy moving-average methods.</li>
+                <li>Engineered real-time fraud detection systems using optimized <strong>YOLO models (ONNX)</strong> for retail environments.</li>
+                <li>Containerized full-stack applications (FastAPI + Celery) for scalable cloud deployment.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Business Intelligence Analyst</span>
+                <span class="entry-date">Feb 2023 – Nov 2023</span>
+            </div>
+            <div class="entry-subtitle">Dai Dong Tien Corporation</div>
+            <ul>
+                <li>Led digital transformation by replacing manual Excel reporting with automated Python/SQL analytical pipelines.</li>
+                <li>Bridged the gap between technical data outputs and strategic management decisions.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Logistics & Strategy Manager Roles</span>
+                <span class="entry-date">2018 – 2023</span>
+            </div>
+            <div class="entry-subtitle">Schenker Vietnam | Toll Group | NielsenIQ</div>
+            <ul>
+                <li><strong>10 Years of Domain Expertise:</strong> Managed complex supply chain operations and M&A strategic analysis.</li>
+                <li>Leveraged deep industry knowledge to design predictive cost models and optimize operational flows.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
